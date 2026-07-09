@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans", sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+/* Common Style */
+.common-btn{
+    padding: 10px 20px;
+    border: none;
+    background-color: #1111eb;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.common-btn:hover{
+    color: navy;
+    background-color: white;
+}
+
+/* Navbar Style */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    
+}
+.logo img{
+    width: 120px;
+    height: auto;
+    cursor: pointer;
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color:#000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+.nav-links a:hover{
+    color:navy;
+}
+/* Hero Section Style */
+.hero-parent-root{
+    background-image: url(/assets/banner.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat
+}
+.hero-container-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+}
+.hero-container-overlay h2{
+    font-size: 50px;
+    color: #ffffffff;
+    margin-bottom: 20px;
+
+}
+.hero-container-overlay p{
+    max-width: 500px;
+    margin-bottom: 250px;
+}
