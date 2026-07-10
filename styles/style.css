@@ -72,7 +72,7 @@ img{
     color: white;
 
 }
-.hero-container-overlay h2{
+.hero-container-overlay h1{
     font-size: 50px;
     color: #ffffffff;
     margin-bottom: 20px;
@@ -82,3 +82,47 @@ img{
     max-width: 500px;
     margin-bottom: 250px;
 }
+/* Meet Speaker Section Style */
+.meet-speakers{
+    padding: 80px 10%;
+}
+ .meet-speakers h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+ }
+.meet-speakers-parent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+
+}
+.speaker-card{
+    background-color: #82b4060f;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: left;
+}
+span.track-level{
+    color: #1111eb;
+    display: inline-block;
+    padding: 15px;
+    font-size: 14px;
+}
+.speaker-card img{
+    border-radius: 5px;
+    margin-bottom:10px;
+    object-fit: cover;
+}
+.speaker-card h3{
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.speaker-card p{
+    color: #000000;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+
