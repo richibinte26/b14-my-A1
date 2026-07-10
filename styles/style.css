@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Open Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 img{
@@ -14,7 +14,7 @@ img{
     border: none;
     background-color: #1111eb;
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
@@ -24,6 +24,31 @@ img{
     color: navy;
     background-color: white;
 }
+.common-outline-btn{
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid;
+    color: #2563EB;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.common-outline-btn:hover{
+    color: white;
+    background-color: navy;
+}
+.black.common-outline-btn{
+    color: #0D1B2A;
+}
+.common-outline-btn.pro{
+    background-color: #2563EB;
+    color: white;
+}
+
 
 /* Navbar Style */
 .navbar{
@@ -45,7 +70,7 @@ img{
 }
 .nav-links a{
     text-decoration: none;
-    color:#000000;
+    color:#575757;
     font-size: 16px;
     cursor: pointer;
 }
@@ -73,14 +98,18 @@ img{
 
 }
 .hero-container-overlay h1{
-    font-size: 50px;
+    font-size: 80px;
     color: #ffffffff;
     margin-bottom: 20px;
-
+}
+.hero-container-overlay em{
+    font-style: italic;
 }
 .hero-container-overlay p{
-    max-width: 500px;
-    margin-bottom: 250px;
+    font-size: 18px;
+    max-width: 670px;
+    line-height: 1.8;
+    margin-bottom: 400px;
 }
 /* Meet Speaker Section Style */
 .meet-speakers{
@@ -88,7 +117,8 @@ img{
 }
  .meet-speakers h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 56px;
+    font-weight: bold;
     margin-bottom: 50px;
  }
 .meet-speakers-parent{
@@ -98,31 +128,130 @@ img{
 
 }
 .speaker-card{
-    background-color: #82b4060f;
-    padding: 4px;
-    border-radius: 10px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
-span.track-level{
-    color: #1111eb;
-    display: inline-block;
-    padding: 15px;
-    font-size: 14px;
+
+.speaker-card-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
-.speaker-card img{
-    border-radius: 5px;
-    margin-bottom:10px;
-    object-fit: cover;
+
+.speakers-content h6{
+    color: #2563EB;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: 12px;
 }
-.speaker-card h3{
+
+.speakers-content h3{
+    font-size: 20px;
+    font-weight: bold;
     padding-left: 15px;
     padding-bottom: 10px;
 }
-.speaker-card p{
-    color: #000000;
+.speakers-content p{
+    color: #575757;
     font-size: 14px;
     padding-left: 15px;
     padding-bottom: 20px;
 }
+/* Secure part style */
+.secure-header{
+    padding: 60px 40px;
+    text-align: center;
+}
+.secure-header h2{
+    color: #0D1B2A;
+    font-weight: bold;
+    font-size: 48px;
+}
+.secure-header p{
+    color: #575757;
+    font-size: 16px;
+    padding-top: 20px;
+}
+.secure-spot-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: 0 200px;
+    text-align: left;
+}
+.secure-spot-card{
+    width: 320px;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.secure-spot-card p{
+    color: #888888;
+    font-size: 13px;
+}
+.secure-spot-card h2{
+    /* margin: 10px 0; */
+    font-size: 44px;
+    font-weight: bold;
+}
+hr{
+    margin-top: 20px;
+    
+}
+.secure-spot-pro-card{
+    width: 320px;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    background-color: #0D1B2A;
+    line-height: 1.4;
+}
+.secure-spot-pro-card p{
+    color: #888888;
+    font-size: 13px;
+}
+.secure-spot-pro-card h2{
+    color: #FFFFFFFF;
+    font-weight: bold;
+}
+.secure-spot-pro-card li{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.8;
+
+}
+.secure-spot-pro-card .pro-text{
+    color: #93C5FD;
+    font-size: 13px;
+}
+
+.secure-spot-pro-card hr{
+    margin-top: 40px;
+    border: none;
+    height: 1px;
+    background-color: #333333;
+}
+
+.featured{
+    color: #333333;
+    font-size: 14px;
+    margin: 20px 0;
+    padding-left: 20px;
+    line-height: 1.8;
+
+}
+.featured li::marker{
+    color: #2563EB;
+}
+
+
 
 
