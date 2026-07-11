@@ -44,9 +44,17 @@ img{
 .black.common-outline-btn{
     color: #0D1B2A;
 }
+.black.common-outline-btn:hover{
+    color: white;
+}
 .common-outline-btn.pro{
     background-color: #2563EB;
     color: white;
+    border: none;
+}
+.common-outline-btn.pro:hover{
+    color: navy;
+    background-color: white;
 }
 
 
@@ -95,7 +103,6 @@ img{
     align-items: center;
     text-align: center;
     color: white;
-
 }
 .hero-container-overlay h1{
     font-size: 80px;
@@ -251,6 +258,109 @@ hr{
 }
 .featured li::marker{
     color: #2563EB;
+}
+/* PLACEHOLDER SECTION AI Style */
+.future-tech{
+    margin-top: 100px;
+    background:#333333;
+    padding:90px 8%;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    color:#ffffff;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#bdbdbd;
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+}
+
+.tech-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.tech-card{
+    background:#1b263b;
+    border:1px solid rgba(0,255,255,.2);
+    border-radius:15px;
+    padding:35px 25px;
+    transition:.3s;
+}
+
+.tech-card:hover{
+    transform:translateY(-8px);
+    border-color:#00e5ff;
+    box-shadow:0 0 20px rgba(0,229,255,.3);
+}
+
+.icon{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.tech-card h3{
+    color:white;
+    margin-bottom:15px;
+}
+
+.tech-card p{
+    color:#cfcfcf;
+    line-height:1.7;
+}
+
+
+/* FOOTER STYLE */
+.footer{
+    background-color: #0F172A;
+    color: #135ba9;
+    padding: 20px 60px;
+}
+
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footer p{
+    margin-top: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+.hr-tag{
+    border:none;
+    height: 1px;
+    background-color: #3b3b3b;
+}
+.social-links{
+    display: flex;
+    gap: 5px;
+}
+.social-links a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.social-links a:hover{
+    color: #0770f1;
 }
 
 
