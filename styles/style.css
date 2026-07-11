@@ -141,6 +141,7 @@ img{
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 10px;
+    object-fit: cover;
 }
 
 .speakers-content h6{
